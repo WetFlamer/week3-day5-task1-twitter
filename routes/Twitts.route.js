@@ -8,5 +8,5 @@ router.patch('/twitt/edit/:twittId', twittsController.updateTwitt)
 router.get('/twitts/:twittId', twittsController.getTwittbyId)
 router.get('/twitts/', twittsController.getTwitts)
 router.get('/twitts/user/:userId', twittsController.getTwittbyUserId)
-router.patch('/twitts/likes/add/:twittId', twittsController.addLike)
+router.patch('/twittId/:twittId', twittsController.addLike)
 module.exports = router

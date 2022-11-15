@@ -42,6 +42,6 @@ module.exports.twittsController = {
         })
     },
     addLike: (req, res) => {
-        Twitts.findByIdAndUpdate
-      }
+        Twitt.findByIdAndUpdate({ _id: req.params.twittId }, {$push: {likes: req.body.likes}}, {new: true}).then((a) => { res.json(a) })
+    }
 }
